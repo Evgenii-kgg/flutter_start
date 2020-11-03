@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:http/http.dart' as http;
 
 
 class SecondScreen extends StatelessWidget {
@@ -11,8 +12,7 @@ class SecondScreen extends StatelessWidget {
       body: Center(
         child: ElevatedButton(
           onPressed: () {
-
-            // Navigate back to first screen when tapped.
+            Navigator.pushNamed(context, '/Third');
           },
           child: Text('Go back!'),
         ),
